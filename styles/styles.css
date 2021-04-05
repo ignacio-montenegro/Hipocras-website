@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+body header .navbar {
+  width: 100vw;
+  overflow-y: scroll;
+  position: fixed;
+  border-bottom: solid 1px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  z-index: 100;
+}
+
+body header .navbar .logo img {
+  width: 85px;
+}
+
+body .verticalLine {
+  background-color: black;
+  width: 1px;
+  height: 18vh;
+  margin: 5vh 50vw 10vh;
+}
+
+body main {
+  position: absolute;
+  top: 80px;
+}
+
+body main .presentacion {
+  padding: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .presentacion h1 {
+  position: relative;
+  font-family: "montserrat";
+  font-size: 25px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body main .presentacion img {
+  margin: 30px 0px;
+  width: 100vw;
+}
+
+body main .presentacion p {
+  font-family: 'montserrat';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.65em;
+  padding: 30px;
+}
+
+.hamburger {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: transparent;
+  left: 0;
+  top: 25px;
+  padding: 30px 20px;
+  z-index: 1002;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.hamburger.is-active {
+  background-color: none;
+}
+
+._layer {
+  background: #000;
+  margin-bottom: 4px;
+  width: 28px;
+  height: 1px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+
+.hamburger:hover .-top {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.hamburger:hover .-bottom {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.hamburger.is-active .-top {
+  -webkit-transform: translateY(200%) rotate(45deg) !important;
+          transform: translateY(200%) rotate(45deg) !important;
+}
+
+.hamburger.is-active .-mid {
+  opacity: 0;
+  display: none;
+}
+
+.hamburger.is-active .-bottom {
+  -webkit-transform: translateY(-200%) rotate(135deg) !important;
+          transform: translateY(-200%) rotate(135deg) !important;
+}
+
+.menuppal.is_active {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
+}
+
+.menuppal {
+  background-color: rgba(255, 255, 255, 0.95);
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  left: 0;
+  overflow-y: scroll;
+  position: fixed;
+  -webkit-transform: translate3d(0px, -100%, 0px);
+          transform: translate3d(0px, -100%, 0px);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  transition: -webkit-transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  transition: transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  transition: transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s, -webkit-transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  width: 100vw;
+}
+
+.menuppal ul {
+  padding: 20px 0px 0px 0px;
+  margin: 0;
+}
+
+.menuppal ul li {
+  border-bottom: 0.2px solid;
+  list-style: none;
+  text-align: center;
+  font-family: "montserrat";
+  font-size: 1.5rem;
+  line-height: 3em;
+  height: 3em;
+  width: 13em;
+  color: #000;
+  text-transform: none;
+  font-weight: 100;
+}
+
+.menuppal ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menuppal ul li a:hover {
+  text-decoration: none;
+  color: #333;
+}
+/*# sourceMappingURL=styles.css.map */
